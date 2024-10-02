@@ -1,7 +1,7 @@
 <?php
 
 
-use Seleda\BybitTypes\PositionIdx;
+use Seleda\BybitTypes\Simple\PositionIdx;
 use PHPUnit\Framework\TestCase;
 
 class PositionIdxTest extends TestCase
@@ -9,6 +9,6 @@ class PositionIdxTest extends TestCase
     public function test1()
     {
         $positionIdx = new PositionIdx(2);
-        $this->assertEquals(2, $positionIdx->ghj);
+        $this->assertTrue(2 === $positionIdx->value());
     }
 }
