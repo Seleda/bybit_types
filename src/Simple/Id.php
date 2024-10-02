@@ -6,7 +6,7 @@ namespace Seleda\BybitTypes\Simple;
 use Seleda\BybitTypes\SimpleInterface;
 
 
-class Шd implements SimpleInterface
+class Id implements SimpleInterface
 {
     private string $id;
 
