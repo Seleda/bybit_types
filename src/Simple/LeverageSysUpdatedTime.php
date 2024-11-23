@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class LeverageSysUpdatedTime implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $leverageSysUpdatedTime;
 
     public function __construct(string $leverageSysUpdatedTime)

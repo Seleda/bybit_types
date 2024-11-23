@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class TrailingStop implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $trailingStop;
 
     public function __construct(string $trailingStop)

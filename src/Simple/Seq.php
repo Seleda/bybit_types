@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class Seq implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $seq;
 
     public function __construct(string $seq)

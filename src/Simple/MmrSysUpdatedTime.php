@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class MmrSysUpdatedTime implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $mmrSysUpdatedTime;
 
     public function __construct(string $mmrSysUpdatedTime)

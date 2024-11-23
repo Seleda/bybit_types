@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class RiskLimitValue implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $riskLimitValue;
 
     public function __construct(string $riskLimitValue)

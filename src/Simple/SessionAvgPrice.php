@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class SessionAvgPrice implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $sessionAvgPrice;
 
     public function __construct(string $sessionAvgPrice)

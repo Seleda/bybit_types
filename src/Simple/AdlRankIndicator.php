@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class AdlRankIndicator implements SimpleInterface
 {
+    use TraitSimple;
+    
     private int $adlRankIndicator;
 
     public function __construct(int $adlRankIndicator)

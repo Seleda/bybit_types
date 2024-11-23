@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class LastPriceOnCreated implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $lastPriceOnCreated;
 
     public function __construct(string $lastPriceOnCreated)

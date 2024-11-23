@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class IsLeverage implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $isLeverage;
 
     public function __construct(string $isLeverage)

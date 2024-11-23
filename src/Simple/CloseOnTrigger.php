@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class CloseOnTrigger implements SimpleInterface
 {
+    use TraitSimple;
+    
     private bool $closeOnTrigger;
 
     public function __construct(bool $closeOnTrigger)

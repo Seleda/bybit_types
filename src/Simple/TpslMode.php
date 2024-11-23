@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class TpslMode implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $tpslMode;
 
     public function __construct(string $tpslMode)

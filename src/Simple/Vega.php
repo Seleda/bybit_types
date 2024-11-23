@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class Vega implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $vega;
 
     public function __construct(string $vega)

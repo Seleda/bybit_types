@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class ReduceOnly implements SimpleInterface
 {
+    use TraitSimple;
+    
     private bool $reduceOnly;
 
     public function __construct(bool $reduceOnly)

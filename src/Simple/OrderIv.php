@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class OrderIv implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $orderIv;
 
     public function __construct(string $orderIv)

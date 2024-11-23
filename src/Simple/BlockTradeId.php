@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class BlockTradeId implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $blockTradeId;
 
     public function __construct(string $blockTradeId)

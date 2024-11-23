@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class StopOrderType implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $stopOrderType;
 
     public function __construct(string $stopOrderType)

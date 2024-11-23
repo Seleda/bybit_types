@@ -6,6 +6,8 @@ namespace Seleda\BybitTypes\Simple;
 
 class Leverage implements \Seleda\BybitTypes\SimpleInterface
 {
+    use TraitSimple;
+    
     private string $leverage;
 
     public function __construct(string $leverage)

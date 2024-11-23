@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class MarkPrice implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $markPrice;
 
     public function __construct(string $markPrice)

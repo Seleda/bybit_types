@@ -54,51 +54,61 @@ use Seleda\BybitTypes\Simple\UpdatedTime;
 
 class Order
 {
-    private Category $category;
-    private OrderId $orderId;
-    private OrderLinkId $orderLinkId;
-    private IsLeverage $isLeverage;
-    private BlockTradeId $blockTradeId;
-    private Symbol $symbol;
-    private Price $price;
-    private Qty $qty;
-    private Side $side;
-    private PositionIdx $positionIdx;
-    private OrderStatus $orderStatus;
-    private CreateType $createType;
-    private CancelType $cancelType;
-    private RejectReason $rejectReason;
-    private AvgPrice $avgPrice;
-    private LeavesQty $leavesQty;
-    private LeavesValue $leavesValue;
-    private CumExecQty $cumExecQty;
-    private CumExecValue $cumExecValue;
-    private CumExecFee $cumExecFee;
-    private ClosedPnl $closedPnl;
-    private FeeCurrency $feeCurrency;
-    private TimeInForce $timeInForce;
-    private OrderType $orderType;
-    private StopOrderType $stopOrderType;
-    private OcoTriggerBy $ocoTriggerBy;
-    private OrderIv $orderIv;
-    private MarketUnit $marketUnit;
-    private TriggerPrice $triggerPrice;
-    private TakeProfit $takeProfit;
-    private StopLoss $stopLoss;
-    private TpslMode $tpslMode;
-    private TpLimitPrice $tpLimitPrice;
-    private SlLimitPrice $slLimitPrice;
-    private TpTriggerBy $tpTriggerBy;
-    private SlTriggerBy $slTriggerBy;
-    private TriggerDirection $triggerDirection;
-    private TriggerBy $triggerBy;
-    private LastPriceOnCreated $lastPriceOnCreated;
-    private ReduceOnly $reduceOnly;
-    private CloseOnTrigger $closeOnTrigger;
-    private PlaceType $placeType;
-    private SmpType $smpType;
-    private SmpGroup $smpGroup;
-    private SmpOrderId $smpOrderId;
-    private CreatedTime $createdTime;
-    private UpdatedTime $updatedTime;
+    public readonly Category $category;
+    public readonly OrderId $orderId;
+    public readonly OrderLinkId $orderLinkId;
+    public readonly IsLeverage $isLeverage;
+    public readonly BlockTradeId $blockTradeId;
+    public readonly Symbol $symbol;
+    public readonly Price $price;
+    public readonly Qty $qty;
+    public readonly Side $side;
+    public readonly PositionIdx $positionIdx;
+    public readonly OrderStatus $orderStatus;
+    public readonly CreateType $createType;
+    public readonly CancelType $cancelType;
+    public readonly RejectReason $rejectReason;
+    public readonly AvgPrice $avgPrice;
+    public readonly LeavesQty $leavesQty;
+    public readonly LeavesValue $leavesValue;
+    public readonly CumExecQty $cumExecQty;
+    public readonly CumExecValue $cumExecValue;
+    public readonly CumExecFee $cumExecFee;
+    public readonly ClosedPnl $closedPnl;
+    public readonly FeeCurrency $feeCurrency;
+    public readonly TimeInForce $timeInForce;
+    public readonly OrderType $orderType;
+    public readonly StopOrderType $stopOrderType;
+    public readonly OcoTriggerBy $ocoTriggerBy;
+    public readonly OrderIv $orderIv;
+    public readonly MarketUnit $marketUnit;
+    public readonly TriggerPrice $triggerPrice;
+    public readonly TakeProfit $takeProfit;
+    public readonly StopLoss $stopLoss;
+    public readonly TpslMode $tpslMode;
+    public readonly TpLimitPrice $tpLimitPrice;
+    public readonly SlLimitPrice $slLimitPrice;
+    public readonly TpTriggerBy $tpTriggerBy;
+    public readonly SlTriggerBy $slTriggerBy;
+    public readonly TriggerDirection $triggerDirection;
+    public readonly TriggerBy $triggerBy;
+    public readonly LastPriceOnCreated $lastPriceOnCreated;
+    public readonly ReduceOnly $reduceOnly;
+    public readonly CloseOnTrigger $closeOnTrigger;
+    public readonly PlaceType $placeType;
+    public readonly SmpType $smpType;
+    public readonly SmpGroup $smpGroup;
+    public readonly SmpOrderId $smpOrderId;
+    public readonly CreatedTime $createdTime;
+    public readonly UpdatedTime $updatedTime;
+
+    public function __construct(array $order)
+    {
+        foreach (get_class_vars(self::class) as $var => $_) {
+            if (isset($order[$var])) {
+                $class = '\\Seleda\\BybitTypes\\Simple\\'.ucfirst($var);
+                $this->{$var} = new $class($order[$var]);
+            }
+        }
+    }
 }

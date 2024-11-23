@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class ClosedPnl implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $closedPnl;
 
     public function __construct(string $closedPnl)

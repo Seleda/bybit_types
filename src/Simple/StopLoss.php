@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class StopLoss implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $stopLoss;
 
     public function __construct(string $stopLoss)

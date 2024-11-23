@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class SlLimitPrice implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $slLimitPrice;
 
     public function __construct(string $slLimitPrice)

@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class RejectReason implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $rejectReason;
 
     public function __construct(string $rejectReason)

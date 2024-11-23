@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class TriggerDirection implements SimpleInterface
 {
+    use TraitSimple;
+    
     private int $triggerDirection;
 
     public function __construct(int $triggerDirection)

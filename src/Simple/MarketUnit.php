@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class MarketUnit implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $marketUnit;
 
     public function __construct(string $marketUnit)

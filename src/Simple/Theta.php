@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class Theta implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $theta;
 
     public function __construct(string $theta)

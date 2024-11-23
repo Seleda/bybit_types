@@ -7,6 +7,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class RiskId implements SimpleInterface
 {
+    use TraitSimple;
+    
     private int $riskId;
 
     public function __construct(int $riskId)

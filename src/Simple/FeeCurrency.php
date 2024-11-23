@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class FeeCurrency implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $feeCurrency;
 
     public function __construct(string $feeCurrency)

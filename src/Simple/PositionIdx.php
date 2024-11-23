@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class PositionIdx implements SimpleInterface
 {
+    use TraitSimple;
+    
     private int $positionIdx;
 
     public function __construct(int $positionIdx)

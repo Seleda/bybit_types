@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class CumExecValue implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $cumExecValue;
 
     public function __construct(string $cumExecValue)

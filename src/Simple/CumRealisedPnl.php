@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class CumRealisedPnl implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $cumRealisedPnl;
 
     public function __construct(string $cumRealisedPnl)

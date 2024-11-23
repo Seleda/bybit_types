@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class LiqPrice implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $liqPrice;
 
     public function __construct(string $liqPrice)

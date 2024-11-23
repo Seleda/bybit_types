@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class PlaceType implements SimpleInterface
 {
+    use TraitSimple;
+
     private string $placeType;
 
     public function __construct(string $placeType)

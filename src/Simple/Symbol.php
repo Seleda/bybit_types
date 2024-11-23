@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class Symbol implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $symbol;
 
     public function __construct(string $symbol)

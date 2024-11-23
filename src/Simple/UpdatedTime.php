@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class  UpdatedTime implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $updatedTime;
 
     public function __construct(string $updatedTime)

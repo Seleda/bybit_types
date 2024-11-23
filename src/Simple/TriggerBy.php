@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class TriggerBy implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $triggerBy;
 
     public function __construct(string $triggerBy)

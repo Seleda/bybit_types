@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class NextPageCursor implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $nextPageCursor;
 
     public function __construct(string $nextPageCursor)

@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class Category implements SimpleInterface
 {
+    use TraitSimple;
+
     private string $category;
 
     public function __construct(string $category)

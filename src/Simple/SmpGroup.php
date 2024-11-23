@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class SmpGroup implements SimpleInterface
 {
+    use TraitSimple;
+    
     private int $smpGroup;
 
     public function __construct(int $smpGroup)

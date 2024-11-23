@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class Gamma implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $gamma;
 
     public function __construct(string $gamma)

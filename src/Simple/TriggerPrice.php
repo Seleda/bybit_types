@@ -8,6 +8,8 @@ use Seleda\BybitTypes\SimpleInterface;
 
 class TriggerPrice implements SimpleInterface
 {
+    use TraitSimple;
+    
     private string $triggerPrice;
 
     public function __construct(string $triggerPrice)
