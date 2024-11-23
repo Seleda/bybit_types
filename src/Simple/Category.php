@@ -10,7 +10,7 @@ class Category implements SimpleInterface
 {
     use TraitSimple;
 
-    private string $category;
+    public readonly string $category;
 
     public function __construct(string $category)
     {

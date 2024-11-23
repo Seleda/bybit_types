@@ -10,7 +10,7 @@ class OcoTriggerBy implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $ocoTriggerBy;
+    public readonly string $ocoTriggerBy;
 
     public function __construct(string $ocoTriggerBy)
     {

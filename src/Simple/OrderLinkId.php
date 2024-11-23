@@ -10,7 +10,7 @@ class OrderLinkId implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $orderLinkId;
+    public readonly string $orderLinkId;
 
     public function __construct(string $orderLinkId)
     {

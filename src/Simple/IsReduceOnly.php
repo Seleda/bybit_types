@@ -10,7 +10,7 @@ class IsReduceOnly implements SimpleInterface
 {
     use TraitSimple;
     
-    private bool $isReduceOnly;
+    public readonly bool $isReduceOnly;
 
     public function __construct(bool $isReduceOnly)
     {

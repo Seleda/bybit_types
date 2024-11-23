@@ -10,7 +10,7 @@ class TriggerPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $triggerPrice;
+    public readonly string $triggerPrice;
 
     public function __construct(string $triggerPrice)
     {

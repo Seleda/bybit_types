@@ -10,7 +10,7 @@ class NextPageCursor implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $nextPageCursor;
+    public readonly string $nextPageCursor;
 
     public function __construct(string $nextPageCursor)
     {

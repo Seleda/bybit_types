@@ -10,7 +10,7 @@ class PositionStatus implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $positionStatus;
+    public readonly string $positionStatus;
 
     public function __construct(string $positionStatus)
     {

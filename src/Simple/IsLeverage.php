@@ -10,7 +10,7 @@ class IsLeverage implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $isLeverage;
+    public readonly string $isLeverage;
 
     public function __construct(string $isLeverage)
     {

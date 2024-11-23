@@ -10,7 +10,7 @@ class RejectReason implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $rejectReason;
+    public readonly string $rejectReason;
 
     public function __construct(string $rejectReason)
     {

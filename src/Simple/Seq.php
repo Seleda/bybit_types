@@ -10,7 +10,7 @@ class Seq implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $seq;
+    public readonly string $seq;
 
     public function __construct(string $seq)
     {

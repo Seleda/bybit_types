@@ -10,7 +10,7 @@ class LastPriceOnCreated implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $lastPriceOnCreated;
+    public readonly string $lastPriceOnCreated;
 
     public function __construct(string $lastPriceOnCreated)
     {

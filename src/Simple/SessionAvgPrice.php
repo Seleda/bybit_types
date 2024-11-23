@@ -10,7 +10,7 @@ class SessionAvgPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $sessionAvgPrice;
+    public readonly string $sessionAvgPrice;
 
     public function __construct(string $sessionAvgPrice)
     {

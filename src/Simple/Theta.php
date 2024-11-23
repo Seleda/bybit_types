@@ -10,7 +10,7 @@ class Theta implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $theta;
+    public readonly string $theta;
 
     public function __construct(string $theta)
     {

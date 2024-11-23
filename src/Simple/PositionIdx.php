@@ -10,7 +10,7 @@ class PositionIdx implements SimpleInterface
 {
     use TraitSimple;
     
-    private int $positionIdx;
+    public readonly int $positionIdx;
 
     public function __construct(int $positionIdx)
     {

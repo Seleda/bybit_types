@@ -10,7 +10,7 @@ class CreatedTime implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $createdTime;
+    public readonly string $createdTime;
 
     public function __construct(string $createdTime)
     {

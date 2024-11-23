@@ -10,7 +10,7 @@ class TpslMode implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $tpslMode;
+    public readonly string $tpslMode;
 
     public function __construct(string $tpslMode)
     {

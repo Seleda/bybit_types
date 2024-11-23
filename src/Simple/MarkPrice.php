@@ -10,7 +10,7 @@ class MarkPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $markPrice;
+    public readonly string $markPrice;
 
     public function __construct(string $markPrice)
     {

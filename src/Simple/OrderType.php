@@ -10,7 +10,7 @@ class OrderType implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $orderType;
+    public readonly string $orderType;
 
     public function __construct(string $orderType)
     {

@@ -10,7 +10,7 @@ class BlockTradeId implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $blockTradeId;
+    public readonly string $blockTradeId;
 
     public function __construct(string $blockTradeId)
     {

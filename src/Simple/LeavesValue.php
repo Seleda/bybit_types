@@ -10,7 +10,7 @@ class LeavesValue implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $leavesValue;
+    public readonly string $leavesValue;
 
     public function __construct(string $leavesValue)
     {

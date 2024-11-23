@@ -10,7 +10,7 @@ class TakeProfit implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $takeProfit;
+    public readonly string $takeProfit;
 
     public function __construct(string $takeProfit)
     {

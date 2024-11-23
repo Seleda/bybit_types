@@ -10,7 +10,7 @@ class CumExecFee implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $cumExecFee;
+    public readonly string $cumExecFee;
 
     public function __construct(string $cumExecFee)
     {

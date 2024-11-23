@@ -10,7 +10,7 @@ class AdlRankIndicator implements SimpleInterface
 {
     use TraitSimple;
     
-    private int $adlRankIndicator;
+    public readonly int $adlRankIndicator;
 
     public function __construct(int $adlRankIndicator)
     {

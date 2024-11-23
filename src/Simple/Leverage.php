@@ -8,7 +8,7 @@ class Leverage implements \Seleda\BybitTypes\SimpleInterface
 {
     use TraitSimple;
     
-    private string $leverage;
+    public readonly string $leverage;
 
     public function __construct(string $leverage)
     {

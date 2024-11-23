@@ -9,7 +9,7 @@ class TradeMode implements SimpleInterface
 {
     use TraitSimple;
     
-    private int $tradeMode;
+    public readonly int $tradeMode;
 
     public function __construct(int $tradeMode)
     {

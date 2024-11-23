@@ -10,7 +10,7 @@ class TimeInForce implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $timeInForce;
+    public readonly string $timeInForce;
 
     public function __construct(string $timeInForce)
     {

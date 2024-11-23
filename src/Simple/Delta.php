@@ -10,7 +10,7 @@ class Delta implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $delta;
+    public readonly string $delta;
 
     public function __construct(string $delta)
     {

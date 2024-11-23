@@ -10,7 +10,7 @@ class TpTriggerBy implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $tpTriggerBy;
+    public readonly string $tpTriggerBy;
 
     public function __construct(string $tpTriggerBy)
     {

@@ -10,7 +10,7 @@ class CancelType implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $cancelType;
+    public readonly string $cancelType;
 
     public function __construct(string $cancelType)
     {

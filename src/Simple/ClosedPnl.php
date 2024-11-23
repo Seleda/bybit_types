@@ -10,7 +10,7 @@ class ClosedPnl implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $closedPnl;
+    public readonly string $closedPnl;
 
     public function __construct(string $closedPnl)
     {

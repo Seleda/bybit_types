@@ -10,7 +10,7 @@ class CurRealisedPnl implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $curRealisedPnl;
+    public readonly string $curRealisedPnl;
 
     public function __construct(string $curRealisedPnl)
     {

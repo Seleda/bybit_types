@@ -10,7 +10,7 @@ class StopOrderType implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $stopOrderType;
+    public readonly string $stopOrderType;
 
     public function __construct(string $stopOrderType)
     {

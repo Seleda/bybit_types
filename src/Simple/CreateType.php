@@ -10,7 +10,7 @@ class CreateType implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $createType;
+    public readonly string $createType;
 
     public function __construct(string $createType)
     {

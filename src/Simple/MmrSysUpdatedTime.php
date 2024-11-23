@@ -10,7 +10,7 @@ class MmrSysUpdatedTime implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $mmrSysUpdatedTime;
+    public readonly string $mmrSysUpdatedTime;
 
     public function __construct(string $mmrSysUpdatedTime)
     {

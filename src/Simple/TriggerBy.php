@@ -10,7 +10,7 @@ class TriggerBy implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $triggerBy;
+    public readonly string $triggerBy;
 
     public function __construct(string $triggerBy)
     {

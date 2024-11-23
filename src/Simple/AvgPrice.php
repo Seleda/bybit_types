@@ -10,7 +10,7 @@ class AvgPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $avgPrice;
+    public readonly string $avgPrice;
 
     public function __construct(string $avgPrice)
     {

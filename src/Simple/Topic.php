@@ -10,7 +10,7 @@ class Topic implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $topic;
+    public readonly string $topic;
 
     public function __construct(string $topic)
     {

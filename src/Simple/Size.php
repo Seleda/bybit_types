@@ -10,7 +10,7 @@ class Size implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $size;
+    public readonly string $size;
 
     public function __construct(string $size)
     {

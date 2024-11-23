@@ -10,7 +10,7 @@ class MarketUnit implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $marketUnit;
+    public readonly string $marketUnit;
 
     public function __construct(string $marketUnit)
     {

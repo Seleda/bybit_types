@@ -10,7 +10,7 @@ class RiskLimitValue implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $riskLimitValue;
+    public readonly string $riskLimitValue;
 
     public function __construct(string $riskLimitValue)
     {

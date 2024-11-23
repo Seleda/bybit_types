@@ -10,7 +10,7 @@ class LeverageSysUpdatedTime implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $leverageSysUpdatedTime;
+    public readonly string $leverageSysUpdatedTime;
 
     public function __construct(string $leverageSysUpdatedTime)
     {

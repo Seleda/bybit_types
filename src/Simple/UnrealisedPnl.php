@@ -10,7 +10,7 @@ class UnrealisedPnl implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $unrealisedPnl;
+    public readonly string $unrealisedPnl;
 
     public function __construct(string $unrealisedPnl)
     {

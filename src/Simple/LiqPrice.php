@@ -10,7 +10,7 @@ class LiqPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $liqPrice;
+    public readonly string $liqPrice;
 
     public function __construct(string $liqPrice)
     {

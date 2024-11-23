@@ -10,7 +10,7 @@ class Gamma implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $gamma;
+    public readonly string $gamma;
 
     public function __construct(string $gamma)
     {

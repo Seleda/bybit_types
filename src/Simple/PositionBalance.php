@@ -10,7 +10,7 @@ class PositionBalance implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $positionBalance;
+    public readonly string $positionBalance;
 
     public function __construct(string $positionBalance)
     {

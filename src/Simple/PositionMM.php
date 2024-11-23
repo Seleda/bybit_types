@@ -10,7 +10,7 @@ class PositionMM implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $positionMM;
+    public readonly string $positionMM;
 
     public function __construct(string $positionMM)
     {

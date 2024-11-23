@@ -10,7 +10,7 @@ class StopLoss implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $stopLoss;
+    public readonly string $stopLoss;
 
     public function __construct(string $stopLoss)
     {

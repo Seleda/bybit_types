@@ -10,7 +10,7 @@ class PlaceType implements SimpleInterface
 {
     use TraitSimple;
 
-    private string $placeType;
+    public readonly string $placeType;
 
     public function __construct(string $placeType)
     {

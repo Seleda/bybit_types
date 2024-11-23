@@ -9,7 +9,7 @@ class RiskId implements SimpleInterface
 {
     use TraitSimple;
     
-    private int $riskId;
+    public readonly int $riskId;
 
     public function __construct(int $riskId)
     {

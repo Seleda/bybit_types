@@ -10,7 +10,7 @@ class Symbol implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $symbol;
+    public readonly string $symbol;
 
     public function __construct(string $symbol)
     {

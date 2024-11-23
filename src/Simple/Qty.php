@@ -10,7 +10,7 @@ class Qty implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $qty;
+    public readonly string $qty;
 
     public function __construct(string $qty)
     {

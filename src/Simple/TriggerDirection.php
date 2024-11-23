@@ -10,7 +10,7 @@ class TriggerDirection implements SimpleInterface
 {
     use TraitSimple;
     
-    private int $triggerDirection;
+    public readonly int $triggerDirection;
 
     public function __construct(int $triggerDirection)
     {

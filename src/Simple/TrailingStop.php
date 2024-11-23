@@ -10,7 +10,7 @@ class TrailingStop implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $trailingStop;
+    public readonly string $trailingStop;
 
     public function __construct(string $trailingStop)
     {

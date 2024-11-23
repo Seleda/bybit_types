@@ -10,7 +10,7 @@ class OrderIv implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $orderIv;
+    public readonly string $orderIv;
 
     public function __construct(string $orderIv)
     {

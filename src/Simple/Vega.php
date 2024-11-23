@@ -10,7 +10,7 @@ class Vega implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $vega;
+    public readonly string $vega;
 
     public function __construct(string $vega)
     {

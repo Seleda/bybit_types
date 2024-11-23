@@ -10,7 +10,7 @@ class CreationTime implements SimpleInterface
 {
     use TraitSimple;
     
-    private int $creationTime;
+    public readonly int $creationTime;
 
     public function __construct(int $creationTime)
     {

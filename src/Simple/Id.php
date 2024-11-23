@@ -10,7 +10,7 @@ class Id implements SimpleInterface
 {
     use TraitSimple;
     
-    private string $id;
+    public readonly string $id;
 
     public function __construct(string $id)
     {

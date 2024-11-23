@@ -10,7 +10,7 @@ class SmpGroup implements SimpleInterface
 {
     use TraitSimple;
     
-    private int $smpGroup;
+    public readonly int $smpGroup;
 
     public function __construct(int $smpGroup)
     {
