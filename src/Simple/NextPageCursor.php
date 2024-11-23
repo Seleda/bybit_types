@@ -10,15 +10,10 @@ class NextPageCursor implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $nextPageCursor;
+    public readonly string $value;
 
-    public function __construct(string $nextPageCursor)
+    public function __construct(string $value)
     {
-        $this->nextPageCursor = $nextPageCursor;
-    }
-
-    public function value(): string
-    {
-        return $this->nextPageCursor;
+        $this->value = $value;
     }
 }

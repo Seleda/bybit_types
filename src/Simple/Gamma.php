@@ -10,15 +10,10 @@ class Gamma implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $gamma;
+    public readonly string $value;
 
-    public function __construct(string $gamma)
+    public function __construct(string $value)
     {
-        $this->gamma = $gamma;
-    }
-
-    public function value(): string
-    {
-        return $this->gamma;
+        $this->value = $value;
     }
 }

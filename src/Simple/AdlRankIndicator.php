@@ -10,15 +10,10 @@ class AdlRankIndicator implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly int $adlRankIndicator;
+    public readonly int $value;
 
-    public function __construct(int $adlRankIndicator)
+    public function __construct(int $value)
     {
-        $this->adlRankIndicator = $adlRankIndicator;
-    }
-
-    public function value(): int
-    {
-        return $this->adlRankIndicator;
+        $this->value = $value;
     }
 }

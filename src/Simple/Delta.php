@@ -10,15 +10,10 @@ class Delta implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $delta;
+    public readonly string $value;
 
-    public function __construct(string $delta)
+    public function __construct(string $value)
     {
-        $this->delta = $delta;
-    }
-
-    public function value(): string
-    {
-        return $this->delta;
+        $this->value = $value;
     }
 }

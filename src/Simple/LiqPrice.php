@@ -10,15 +10,10 @@ class LiqPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $liqPrice;
+    public readonly string $value;
 
-    public function __construct(string $liqPrice)
+    public function __construct(string $value)
     {
-        $this->liqPrice = $liqPrice;
-    }
-
-    public function value(): string
-    {
-        return $this->liqPrice;
+        $this->value = $value;
     }
 }

@@ -10,15 +10,10 @@ class SmpType implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $smpType;
+    public readonly string $value;
 
-    public function __construct(string $smpType)
+    public function __construct(string $value)
     {
-        $this->smpType = $smpType;
-    }
-
-    public function value(): string
-    {
-        return $this->smpType;
+        $this->value = $value;
     }
 }

@@ -10,15 +10,10 @@ class Category implements SimpleInterface
 {
     use TraitSimple;
 
-    public readonly string $category;
+    public readonly string $value;
 
-    public function __construct(string $category)
+    public function __construct(string $value)
     {
-        $this->category = $category;
-    }
-
-    public function value(): string
-    {
-        return $this->category;
+        $this->value = $value;
     }
 }

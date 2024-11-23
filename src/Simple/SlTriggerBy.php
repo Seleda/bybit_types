@@ -10,15 +10,10 @@ class SlTriggerBy implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $slTriggerBy;
+    public readonly string $value;
 
-    public function __construct(string $slTriggerBy)
+    public function __construct(string $value)
     {
-        $this->slTriggerBy = $slTriggerBy;
-    }
-
-    public function value(): string
-    {
-        return $this->slTriggerBy;
+        $this->value = $value;
     }
 }

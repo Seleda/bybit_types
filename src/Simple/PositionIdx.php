@@ -9,16 +9,11 @@ use Seleda\BybitTypes\SimpleInterface;
 class PositionIdx implements SimpleInterface
 {
     use TraitSimple;
-    
-    public readonly int $positionIdx;
 
-    public function __construct(int $positionIdx)
-    {
-        $this->positionIdx = $positionIdx;
-    }
+    public readonly int $value;
 
-    public function value(): int
+    public function __construct(int $value)
     {
-        return $this->positionIdx;
+        $this->value = $value;
     }
 }

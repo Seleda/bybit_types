@@ -9,15 +9,10 @@ class RiskId implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly int $riskId;
+    public readonly int $value;
 
-    public function __construct(int $riskId)
+    public function __construct(int $value)
     {
-        $this->riskId = $riskId;
-    }
-
-    public function value(): int
-    {
-        return $this->riskId;
+        $this->value = $value;
     }
 }

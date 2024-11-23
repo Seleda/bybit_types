@@ -8,15 +8,10 @@ class Leverage implements \Seleda\BybitTypes\SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $leverage;
+    public readonly string $value;
 
-    public function __construct(string $leverage)
+    public function __construct(string $value)
     {
-        $this->leverage = $leverage;
-    }
-
-    public function value(): string
-    {
-        return $this->leverage;
+        $this->value = $value;
     }
 }

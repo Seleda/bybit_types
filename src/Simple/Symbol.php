@@ -10,15 +10,10 @@ class Symbol implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $symbol;
+    public readonly string $value;
 
-    public function __construct(string $symbol)
+    public function __construct(string $value)
     {
-        $this->symbol = $symbol;
-    }
-
-    public function value(): string
-    {
-        return $this->symbol;
+        $this->value = $value;
     }
 }

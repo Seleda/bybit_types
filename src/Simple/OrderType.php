@@ -10,15 +10,10 @@ class OrderType implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $orderType;
+    public readonly string $value;
 
-    public function __construct(string $orderType)
+    public function __construct(string $value)
     {
-        $this->orderType = $orderType;
-    }
-
-    public function value(): string
-    {
-        return $this->orderType;
+        $this->value = $value;
     }
 }

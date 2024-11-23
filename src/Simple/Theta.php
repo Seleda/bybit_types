@@ -10,15 +10,10 @@ class Theta implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $theta;
+    public readonly string $value;
 
-    public function __construct(string $theta)
+    public function __construct(string $value)
     {
-        $this->theta = $theta;
-    }
-
-    public function value(): string
-    {
-        return $this->theta;
+        $this->value = $value;
     }
 }

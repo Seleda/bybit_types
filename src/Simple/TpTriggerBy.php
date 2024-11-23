@@ -10,15 +10,10 @@ class TpTriggerBy implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $tpTriggerBy;
+    public readonly string $value;
 
-    public function __construct(string $tpTriggerBy)
+    public function __construct(string $value)
     {
-        $this->tpTriggerBy = $tpTriggerBy;
-    }
-
-    public function value(): string
-    {
-        return $this->tpTriggerBy;
+        $this->value = $value;
     }
 }

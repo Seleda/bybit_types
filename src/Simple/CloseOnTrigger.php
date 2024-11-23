@@ -10,15 +10,10 @@ class CloseOnTrigger implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly bool $closeOnTrigger;
+    public readonly bool $value;
 
-    public function __construct(bool $closeOnTrigger)
+    public function __construct(bool $value)
     {
-        $this->closeOnTrigger = $closeOnTrigger;
-    }
-
-    public function value(): bool
-    {
-        return $this->closeOnTrigger;
+        $this->value = $value;
     }
 }

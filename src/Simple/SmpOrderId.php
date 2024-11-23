@@ -10,15 +10,10 @@ class SmpOrderId implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $smpOrderId;
+    public readonly string $value;
 
-    public function __construct(string $smpOrderId)
+    public function __construct(string $value)
     {
-        $this->smpOrderId = $smpOrderId;
-    }
-
-    public function value(): string
-    {
-        return $this->smpOrderId;
+        $this->value = $value;
     }
 }

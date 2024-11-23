@@ -10,15 +10,10 @@ class IsReduceOnly implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly bool $isReduceOnly;
+    public readonly bool $value;
 
-    public function __construct(bool $isReduceOnly)
+    public function __construct(bool $value)
     {
-        $this->isReduceOnly = $isReduceOnly;
-    }
-
-    public function value(): bool
-    {
-        return $this->isReduceOnly;
+        $this->value = $value;
     }
 }

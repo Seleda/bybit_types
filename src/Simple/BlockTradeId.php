@@ -10,15 +10,10 @@ class BlockTradeId implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $blockTradeId;
+    public readonly string $value;
 
-    public function __construct(string $blockTradeId)
+    public function __construct(string $value)
     {
-        $this->blockTradeId = $blockTradeId;
-    }
-
-    public function value(): string
-    {
-        return $this->blockTradeId;
+        $this->value = $value;
     }
 }

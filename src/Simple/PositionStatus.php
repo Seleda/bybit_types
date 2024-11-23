@@ -10,15 +10,9 @@ class PositionStatus implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $positionStatus;
+    public readonly string $value;
 
-    public function __construct(string $positionStatus)
+    public function __construct(string $value)
     {
-        $this->positionStatus = $positionStatus;
+        $this->value = $value;
     }
-
-    public function value(): string
-    {
-        return $this->positionStatus;
-    }
-}

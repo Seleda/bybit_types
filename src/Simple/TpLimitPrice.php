@@ -10,15 +10,10 @@ class TpLimitPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $tpLimitPrice;
+    public readonly string $value;
 
-    public function __construct(string $tpLimitPrice)
+    public function __construct(string $value)
     {
-        $this->tpLimitPrice = $tpLimitPrice;
-    }
-
-    public function value(): string
-    {
-        return $this->tpLimitPrice;
+        $this->value = $value;
     }
 }

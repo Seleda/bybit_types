@@ -10,15 +10,10 @@ class TrailingStop implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $trailingStop;
+    public readonly string $value;
 
-    public function __construct(string $trailingStop)
+    public function __construct(string $value)
     {
-        $this->trailingStop = $trailingStop;
-    }
-
-    public function value(): string
-    {
-        return $this->trailingStop;
+        $this->value = $value;
     }
 }

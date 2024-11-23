@@ -10,15 +10,10 @@ class StopLoss implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $stopLoss;
+    public readonly string $value;
 
-    public function __construct(string $stopLoss)
+    public function __construct(string $value)
     {
-        $this->stopLoss = $stopLoss;
-    }
-
-    public function value(): string
-    {
-        return $this->stopLoss;
+        $this->value = $value;
     }
 }

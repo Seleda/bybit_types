@@ -10,15 +10,10 @@ class StopOrderType implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $stopOrderType;
+    public readonly string $value;
 
-    public function __construct(string $stopOrderType)
+    public function __construct(string $value)
     {
-        $this->stopOrderType = $stopOrderType;
-    }
-
-    public function value(): string
-    {
-        return $this->stopOrderType;
+        $this->value = $value;
     }
 }

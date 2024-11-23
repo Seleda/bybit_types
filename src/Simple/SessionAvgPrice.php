@@ -10,15 +10,10 @@ class SessionAvgPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $sessionAvgPrice;
+    public readonly string $value;
 
-    public function __construct(string $sessionAvgPrice)
+    public function __construct(string $value)
     {
-        $this->sessionAvgPrice = $sessionAvgPrice;
-    }
-
-    public function value(): string
-    {
-        return $this->sessionAvgPrice;
+        $this->value = $value;
     }
 }

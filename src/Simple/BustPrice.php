@@ -8,15 +8,10 @@ class BustPrice implements \Seleda\BybitTypes\SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $bustPrice;
+    public readonly string $value;
 
-    public function __construct(string $bustPrice)
+    public function __construct(string $value)
     {
-        $this->bustPrice = $bustPrice;
-    }
-
-    public function value(): string
-    {
-        return $this->bustPrice;
+        $this->value = $value;
     }
 }

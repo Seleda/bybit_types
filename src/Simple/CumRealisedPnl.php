@@ -10,15 +10,10 @@ class CumRealisedPnl implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $cumRealisedPnl;
+    public readonly string $value;
 
-    public function __construct(string $cumRealisedPnl)
+    public function __construct(string $value)
     {
-        $this->cumRealisedPnl = $cumRealisedPnl;
-    }
-
-    public function value(): string
-    {
-        return $this->cumRealisedPnl;
+        $this->value = $value;
     }
 }

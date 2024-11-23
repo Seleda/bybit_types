@@ -10,15 +10,10 @@ class ClosedPnl implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $closedPnl;
+    public readonly string $value;
 
-    public function __construct(string $closedPnl)
+    public function __construct(string $value)
     {
-        $this->closedPnl = $closedPnl;
-    }
-
-    public function value(): string
-    {
-        return $this->closedPnl;
+        $this->value = $value;
     }
 }

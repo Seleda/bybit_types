@@ -10,15 +10,10 @@ class PositionMM implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $positionMM;
+    public readonly string $value;
 
-    public function __construct(string $positionMM)
+    public function __construct(string $value)
     {
-        $this->positionMM = $positionMM;
-    }
-
-    public function value(): string
-    {
-        return $this->positionMM;
+        $this->value = $value;
     }
 }

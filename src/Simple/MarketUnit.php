@@ -10,15 +10,10 @@ class MarketUnit implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $marketUnit;
+    public readonly string $value;
 
-    public function __construct(string $marketUnit)
+    public function __construct(string $value)
     {
-        $this->marketUnit = $marketUnit;
-    }
-
-    public function value(): string
-    {
-        return $this->marketUnit;
+        $this->value = $value;
     }
 }

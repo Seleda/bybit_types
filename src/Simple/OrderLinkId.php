@@ -10,15 +10,10 @@ class OrderLinkId implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $orderLinkId;
+    public readonly string $value;
 
-    public function __construct(string $orderLinkId)
+    public function __construct(string $value)
     {
-        $this->orderLinkId = $orderLinkId;
-    }
-
-    public function value(): string
-    {
-        return $this->orderLinkId;
+        $this->value = $value;
     }
 }

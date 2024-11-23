@@ -10,15 +10,10 @@ class Qty implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $qty;
+    public readonly string $value;
 
-    public function __construct(string $qty)
+    public function __construct(string $value)
     {
-        $this->qty = $qty;
-    }
-
-    public function value(): string
-    {
-        return $this->qty;
+        $this->value = $value;
     }
 }

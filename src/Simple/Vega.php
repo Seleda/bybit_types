@@ -10,15 +10,10 @@ class Vega implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $vega;
+    public readonly string $value;
 
-    public function __construct(string $vega)
+    public function __construct(string $value)
     {
-        $this->vega = $vega;
-    }
-
-    public function value(): string
-    {
-        return $this->vega;
+        $this->value = $value;
     }
 }

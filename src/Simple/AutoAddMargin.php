@@ -10,15 +10,10 @@ class AutoAddMargin implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly int $autoAddMargin;
+    public readonly int $value;
 
-    public function __construct(int $autoAddMargin)
+    public function __construct(int $value)
     {
-        $this->autoAddMargin = $autoAddMargin;
-    }
-
-    public function value(): int
-    {
-        return $this->autoAddMargin;
+        $this->value = $value;
     }
 }

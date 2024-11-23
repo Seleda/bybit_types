@@ -10,15 +10,10 @@ class LeavesValue implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $leavesValue;
+    public readonly string $value;
 
-    public function __construct(string $leavesValue)
+    public function __construct(string $value)
     {
-        $this->leavesValue = $leavesValue;
-    }
-
-    public function value(): string
-    {
-        return $this->leavesValue;
+        $this->value = $value;
     }
 }

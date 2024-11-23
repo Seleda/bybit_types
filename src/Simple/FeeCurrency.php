@@ -10,15 +10,10 @@ class FeeCurrency implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $feeCurrency;
+    public readonly string $value;
 
-    public function __construct(string $feeCurrency)
+    public function __construct(string $value)
     {
-        $this->feeCurrency = $feeCurrency;
-    }
-
-    public function value(): string
-    {
-        return $this->feeCurrency;
+        $this->value = $value;
     }
 }

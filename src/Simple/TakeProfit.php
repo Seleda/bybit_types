@@ -10,15 +10,10 @@ class TakeProfit implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $takeProfit;
+    public readonly string $value;
 
-    public function __construct(string $takeProfit)
+    public function __construct(string $value)
     {
-        $this->takeProfit = $takeProfit;
-    }
-
-    public function value(): string
-    {
-        return $this->takeProfit;
+        $this->value = $value;
     }
 }

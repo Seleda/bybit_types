@@ -10,15 +10,10 @@ class LastPriceOnCreated implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $lastPriceOnCreated;
+    public readonly string $value;
 
-    public function __construct(string $lastPriceOnCreated)
+    public function __construct(string $value)
     {
-        $this->lastPriceOnCreated = $lastPriceOnCreated;
-    }
-
-    public function value(): string
-    {
-        return $this->lastPriceOnCreated;
+        $this->value = $value;
     }
 }

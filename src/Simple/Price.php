@@ -9,16 +9,11 @@ use Seleda\BybitTypes\SimpleInterface;
 class Price implements SimpleInterface
 {
     use TraitSimple;
-    
-    public readonly string $price;
 
-    public function __construct(string $price)
-    {
-        $this->price = $price;
-    }
+    public readonly string $value;
 
-    public function value(): string
+    public function __construct(string $value)
     {
-        return $this->price;
+        $this->value = $value;
     }
 }

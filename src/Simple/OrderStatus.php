@@ -10,15 +10,10 @@ class OrderStatus implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $orderStatus;
+    public readonly string $value;
 
-    public function __construct(string $orderStatus)
+    public function __construct(string $value)
     {
-        $this->orderStatus = $orderStatus;
-    }
-
-    public function value(): string
-    {
-        return $this->orderStatus;
+        $this->value = $value;
     }
 }

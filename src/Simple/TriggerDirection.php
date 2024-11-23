@@ -10,15 +10,10 @@ class TriggerDirection implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly int $triggerDirection;
+    public readonly int $value;
 
-    public function __construct(int $triggerDirection)
+    public function __construct(int $value)
     {
-        $this->triggerDirection = $triggerDirection;
-    }
-
-    public function value(): int
-    {
-        return $this->triggerDirection;
+        $this->value = $value;
     }
 }

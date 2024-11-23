@@ -10,15 +10,10 @@ class IsLeverage implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $isLeverage;
+    public readonly string $value;
 
-    public function __construct(string $isLeverage)
+    public function __construct(string $value)
     {
-        $this->isLeverage = $isLeverage;
-    }
-
-    public function value(): string
-    {
-        return $this->isLeverage;
+        $this->value = $value;
     }
 }

@@ -10,15 +10,10 @@ class RejectReason implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $rejectReason;
+    public readonly string $value;
 
-    public function __construct(string $rejectReason)
+    public function __construct(string $value)
     {
-        $this->rejectReason = $rejectReason;
-    }
-
-    public function value(): string
-    {
-        return $this->rejectReason;
+        $this->value = $value;
     }
 }

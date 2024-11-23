@@ -10,15 +10,10 @@ class UnrealisedPnl implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $unrealisedPnl;
+    public readonly string $value;
 
-    public function __construct(string $unrealisedPnl)
+    public function __construct(string $value)
     {
-        $this->unrealisedPnl = $unrealisedPnl;
-    }
-
-    public function value(): string
-    {
-        return $this->unrealisedPnl;
+        $this->value = $value;
     }
 }

@@ -10,15 +10,10 @@ class SmpGroup implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly int $smpGroup;
+    public readonly int $value;
 
-    public function __construct(int $smpGroup)
+    public function __construct(int $value)
     {
-        $this->smpGroup = $smpGroup;
-    }
-
-    public function value(): int
-    {
-        return $this->smpGroup;
+        $this->value = $value;
     }
 }

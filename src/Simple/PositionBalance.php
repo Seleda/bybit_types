@@ -10,15 +10,10 @@ class PositionBalance implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $positionBalance;
+    public readonly string $value;
 
-    public function __construct(string $positionBalance)
+    public function __construct(string $value)
     {
-        $this->positionBalance = $positionBalance;
-    }
-
-    public function value(): string
-    {
-        return $this->positionBalance;
+        $this->value = $value;
     }
 }

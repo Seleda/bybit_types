@@ -10,15 +10,10 @@ class MmrSysUpdatedTime implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $mmrSysUpdatedTime;
+    public readonly string $value;
 
-    public function __construct(string $mmrSysUpdatedTime)
+    public function __construct(string $value)
     {
-        $this->mmrSysUpdatedTime = $mmrSysUpdatedTime;
-    }
-
-    public function value(): string
-    {
-        return $this->mmrSysUpdatedTime;
+        $this->value = $value;
     }
 }

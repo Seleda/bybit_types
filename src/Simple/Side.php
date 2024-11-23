@@ -10,15 +10,10 @@ class Side implements SimpleInterface
 {
     use TraitSimple;
     
-    public string $side;
+    public string $value;
 
-    public function __construct(string $side)
+    public function __construct(string $value)
     {
-        $this->side = $side;
-    }
-
-    public function value(): string
-    {
-        return $this->side;
+        $this->value = $value;
     }
 }

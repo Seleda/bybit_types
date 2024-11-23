@@ -10,15 +10,10 @@ class Id implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $id;
+    public readonly string $value;
 
-    public function __construct(string $id)
+    public function __construct(string $value)
     {
-        $this->id = $id;
-    }
-
-    public function value(): string
-    {
-        return $this->id;
+        $this->value = $value;
     }
 }

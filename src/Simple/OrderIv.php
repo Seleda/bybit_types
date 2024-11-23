@@ -10,15 +10,10 @@ class OrderIv implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $orderIv;
+    public readonly string $value;
 
-    public function __construct(string $orderIv)
+    public function __construct(string $value)
     {
-        $this->orderIv = $orderIv;
-    }
-
-    public function value(): string
-    {
-        return $this->orderIv;
+        $this->value = $value;
     }
 }

@@ -10,15 +10,10 @@ class RiskLimitValue implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $riskLimitValue;
+    public readonly string $value;
 
-    public function __construct(string $riskLimitValue)
+    public function __construct(string $value)
     {
-        $this->riskLimitValue = $riskLimitValue;
-    }
-
-    public function value(): string
-    {
-        return $this->riskLimitValue;
+        $this->value = $value;
     }
 }

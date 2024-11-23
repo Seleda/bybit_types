@@ -10,15 +10,10 @@ class CreateType implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $createType;
+    public readonly string $value;
 
-    public function __construct(string $createType)
+    public function __construct(string $value)
     {
-        $this->createType = $createType;
-    }
-
-    public function value(): string
-    {
-        return $this->createType;
+        $this->value = $value;
     }
 }

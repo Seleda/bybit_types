@@ -10,15 +10,10 @@ class PlaceType implements SimpleInterface
 {
     use TraitSimple;
 
-    public readonly string $placeType;
+    public readonly string $value;
 
-    public function __construct(string $placeType)
+    public function __construct(string $value)
     {
-        $this->placeType = $placeType;
-    }
-
-    public function value(): string
-    {
-        return $this->placeType;
+        $this->value = $value;
     }
 }

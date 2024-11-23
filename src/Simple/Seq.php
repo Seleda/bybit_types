@@ -10,15 +10,9 @@ class Seq implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $seq;
+    public readonly string $value;
 
-    public function __construct(string $seq)
+    public function __construct(string $value)
     {
-        $this->seq = $seq;
+        $this->value = $value;
     }
-
-    public function value(): string
-    {
-        return $this->seq;
-    }
-}

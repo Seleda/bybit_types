@@ -9,6 +9,6 @@ class PositionIdxTest extends TestCase
     public function test1()
     {
         $positionIdx = new PositionIdx(2);
-        $this->assertTrue(2 === $positionIdx->value());
+        $this->assertTrue(2 === $positionIdx->value);
     }
 }

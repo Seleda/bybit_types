@@ -10,15 +10,10 @@ class SlLimitPrice implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $slLimitPrice;
+    public readonly string $value;
 
-    public function __construct(string $slLimitPrice)
+    public function __construct(string $value)
     {
-        $this->slLimitPrice = $slLimitPrice;
-    }
-
-    public function value(): string
-    {
-        return $this->slLimitPrice;
+        $this->value = $value;
     }
 }

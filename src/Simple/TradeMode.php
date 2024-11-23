@@ -9,15 +9,10 @@ class TradeMode implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly int $tradeMode;
+    public readonly int $value;
 
-    public function __construct(int $tradeMode)
+    public function __construct(int $value)
     {
-        $this->tradeMode = $tradeMode;
-    }
-
-    public function value(): int
-    {
-        return $this->tradeMode;
+        $this->value = $value;
     }
 }

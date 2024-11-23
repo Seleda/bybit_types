@@ -10,15 +10,10 @@ class CumExecFee implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $cumExecFee;
+    public readonly string $value;
 
-    public function __construct(string $cumExecFee)
+    public function __construct(string $value)
     {
-        $this->cumExecFee = $cumExecFee;
-    }
-
-    public function value(): string
-    {
-        return $this->cumExecFee;
+        $this->value = $value;
     }
 }

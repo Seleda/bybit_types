@@ -10,15 +10,10 @@ class Topic implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $topic;
+    public readonly string $value;
 
-    public function __construct(string $topic)
+    public function __construct(string $value)
     {
-        $this->topic = $topic;
-    }
-
-    public function value(): string
-    {
-        return $this->topic;
+        $this->value = $value;
     }
 }

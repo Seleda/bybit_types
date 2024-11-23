@@ -10,15 +10,10 @@ class CreatedTime implements SimpleInterface
 {
     use TraitSimple;
     
-    public readonly string $createdTime;
+    public readonly string $value;
 
-    public function __construct(string $createdTime)
+    public function __construct(string $value)
     {
-        $this->createdTime = $createdTime;
-    }
-
-    public function value(): string
-    {
-        return $this->createdTime;
+        $this->value = $value;
     }
 }
