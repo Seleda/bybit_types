@@ -1,0 +1,104 @@
+<?php
+
+
+namespace Seleda\BybitTypes\Сomposite;
+
+
+use Seleda\BybitTypes\Simple\AvgPrice;
+use Seleda\BybitTypes\Simple\BlockTradeId;
+use Seleda\BybitTypes\Simple\CancelType;
+use Seleda\BybitTypes\Simple\Category;
+use Seleda\BybitTypes\Simple\ClosedPnl;
+use Seleda\BybitTypes\Simple\CloseOnTrigger;
+use Seleda\BybitTypes\Simple\CreatedTime;
+use Seleda\BybitTypes\Simple\CreateType;
+use Seleda\BybitTypes\Simple\CumExecFee;
+use Seleda\BybitTypes\Simple\CumExecQty;
+use Seleda\BybitTypes\Simple\CumExecValue;
+use Seleda\BybitTypes\Simple\FeeCurrency;
+use Seleda\BybitTypes\Simple\IsLeverage;
+use Seleda\BybitTypes\Simple\LastPriceOnCreated;
+use Seleda\BybitTypes\Simple\LeavesQty;
+use Seleda\BybitTypes\Simple\LeavesValue;
+use Seleda\BybitTypes\Simple\MarketUnit;
+use Seleda\BybitTypes\Simple\OcoTriggerBy;
+use Seleda\BybitTypes\Simple\OrderId;
+use Seleda\BybitTypes\Simple\OrderIv;
+use Seleda\BybitTypes\Simple\OrderLinkId;
+use Seleda\BybitTypes\Simple\OrderStatus;
+use Seleda\BybitTypes\Simple\OrderType;
+use Seleda\BybitTypes\Simple\PlaceType;
+use Seleda\BybitTypes\Simple\PositionIdx;
+use Seleda\BybitTypes\Simple\Price;
+use Seleda\BybitTypes\Simple\Qty;
+use Seleda\BybitTypes\Simple\ReduceOnly;
+use Seleda\BybitTypes\Simple\RejectReason;
+use Seleda\BybitTypes\Simple\Side;
+use Seleda\BybitTypes\Simple\SlLimitPrice;
+use Seleda\BybitTypes\Simple\SlTriggerBy;
+use Seleda\BybitTypes\Simple\SmpGroup;
+use Seleda\BybitTypes\Simple\SmpOrderId;
+use Seleda\BybitTypes\Simple\SmpType;
+use Seleda\BybitTypes\Simple\StopLoss;
+use Seleda\BybitTypes\Simple\StopOrderType;
+use Seleda\BybitTypes\Simple\Symbol;
+use Seleda\BybitTypes\Simple\TakeProfit;
+use Seleda\BybitTypes\Simple\TimeInForce;
+use Seleda\BybitTypes\Simple\TpLimitPrice;
+use Seleda\BybitTypes\Simple\TpslMode;
+use Seleda\BybitTypes\Simple\TpTriggerBy;
+use Seleda\BybitTypes\Simple\TriggerBy;
+use Seleda\BybitTypes\Simple\TriggerDirection;
+use Seleda\BybitTypes\Simple\TriggerPrice;
+use Seleda\BybitTypes\Simple\UpdatedTime;
+
+class Order
+{
+    private Category $category;
+    private OrderId $orderId;
+    private OrderLinkId $orderLinkId;
+    private IsLeverage $isLeverage;
+    private BlockTradeId $blockTradeId;
+    private Symbol $symbol;
+    private Price $price;
+    private Qty $qty;
+    private Side $side;
+    private PositionIdx $positionIdx;
+    private OrderStatus $orderStatus;
+    private CreateType $createType;
+    private CancelType $cancelType;
+    private RejectReason $rejectReason;
+    private AvgPrice $avgPrice;
+    private LeavesQty $leavesQty;
+    private LeavesValue $leavesValue;
+    private CumExecQty $cumExecQty;
+    private CumExecValue $cumExecValue;
+    private CumExecFee $cumExecFee;
+    private ClosedPnl $closedPnl;
+    private FeeCurrency $feeCurrency;
+    private TimeInForce $timeInForce;
+    private OrderType $orderType;
+    private StopOrderType $stopOrderType;
+    private OcoTriggerBy $ocoTriggerBy;
+    private OrderIv $orderIv;
+    private MarketUnit $marketUnit;
+    private TriggerPrice $triggerPrice;
+    private TakeProfit $takeProfit;
+    private StopLoss $stopLoss;
+    private TpslMode $tpslMode;
+    private TpLimitPrice $tpLimitPrice;
+    private SlLimitPrice $slLimitPrice;
+    private TpTriggerBy $tpTriggerBy;
+    private SlTriggerBy $slTriggerBy;
+    private TriggerDirection $triggerDirection;
+    private TriggerBy $triggerBy;
+    private LastPriceOnCreated $lastPriceOnCreated;
+    private ReduceOnly $reduceOnly;
+    private CloseOnTrigger $closeOnTrigger;
+    private PlaceType $placeType;
+    private SmpType $smpType;
+    private SmpGroup $smpGroup;
+    private SmpOrderId $smpOrderId;
+    private CreatedTime $createdTime;
+    private UpdatedTime $updatedTime;
+}
