@@ -3,13 +3,11 @@
 
 namespace Seleda\BybitTypes\Simple;
 
-use Seleda\BybitTypes\SimpleInterface;
 
-
-class Side implements SimpleInterface
+class OpenInterest implements \Seleda\BybitTypes\SimpleInterface
 {
     use TraitSimple;
-    
+
     public readonly string $value;
 
     public function __construct(string $value)
